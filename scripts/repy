@@ -17,8 +17,8 @@ clear
 echo -e "${gray}                                                ..${null}"
 echo -e "${Gray}..................................              ..${null}"
 echo -e ""
-echo -e "${yellow} start repy "${null}
-echo -e "${yellow} uninstall repy "${null}
+echo -e "${yellow} 1 start repy "${null}
+echo -e "${yellow} 2 uninstall repy "${null}
 echo -e ""
 echo -e "${Gray}..................................              ..${null}"
 echo -e ""
