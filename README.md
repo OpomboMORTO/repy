@@ -16,7 +16,7 @@ Download and install
 
 Open termux and paste command
 
-`curl -s -o x https://raw.githubusercontent.com/olegos2/termux-box/main/install && chmod +x x && ./x`
+`curl -s -o x https://raw.githubusercontent.com/OpomboMORTO/repy/main/scripts/rootfsEmpty_Install && chmod +x rootfsEmpty_Install && ./rootfsEmpty_Install`
 
 ## Configuration
 After installation, start the repy environment using the `repy` command, select start to generate a wine prefix, after that go to settings and install directX and the dxvk of your choice.
