@@ -291,7 +291,7 @@ echo -e ""
 echo -e "${Gray}..................................              ..${null}"
 echo -e "${gray}                                [HOME] to menu  ..${null}"
 
-curl -O https://raw.githubusercontent.com/OpomboMORTO/fex-acclan/main/scripts/repy &>/dev/null
+curl -O https://raw.githubusercontent.com/OpomboMORTO/repy/main/scripts/repy &>/dev/null
 chmod +x repy
 mv repy $PREFIX/bin &>/dev/null
 
