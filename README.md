@@ -22,29 +22,12 @@ Open termux and paste command
 After installation, start the repy environment using the `repy` command, select start to generate a wine prefix, after that go to settings and install directX and the dxvk of your choice.
 
 #
-Big thanks to Hugo for help.
+Big thanks to olegos for readme.
+  
+### Renderers
 
-[MishkaKolos Discord](https://discord.gg/ZAQnZzbCXq)
-
-## Device support
-### Android
-* `Android 9+` — basic support, may not work
-* `Android 10+` — root users
-* `Android 11+` — non-root users
-### Render
-* Snapdragon with Adreno 6xx or Adreno 7xx — Turnip + Zink / Turnip + DXVK with better speed.
-* Qualcomm/Mediatek/Exynos — VirGL
-
-## Features
-* `Termux-box` has automatic updates, so you don't have to reinstall it so often.
-* TFM works a lot faster with custom wine.
-* The most lightweight rootfs.
-* `Proot` which is faster than proot-distro.
-* `Chroot` with working VirGL for root users
-* VirGL server with dxtn support (termux virgl doesn't have this). Mesa-VirGL 18.3.0, 19.1.8, 22.1.7.
-* `Turnip` with adreno 610 and 7xx support. `Mesa-zink-11.06.22` built from alexvorxx repo which is faster and has better compatibility. `D8VK + DXVK + VKD3D` and `WineD3D`.
-* `Prefix-tweaks` script that automatically installs DirectX, 7-Zip, various registry fixes, better taskmgr and notepad. Custom theme, better fonts which give a lot better look compared to default wine prefix. Better icons. E:\ (Android/data/com.termux/files/Download folder) for faster performance without having to copy games to C:\ drive
-* Experimental `wine-tweaks` script that automatically installs downloaded wine, customizes it for better TFM speed and reduces size
+* Turnip-Zink : for adreno devices from the 6xx line, turnip availability may vary depending on your device, the 7xx line is not compatible in this version
+* OpenGl ES : availability for devices with OPENGL-ES support, its compatibility is still being tested, it is only available in opengl 1.X 2.X applications for 3.X 4.X applications use zink 
 
 ## Third party applications
 
@@ -73,3 +56,6 @@ Big thanks to Hugo for help.
 [Mesa](https://docs.mesa3d.org/license.html) MIT license
 
 [mesa-zink-11.06.22](https://github.com/alexvorxx/mesa-zink-11.06.22)
+
+[gl4es](https://github.com/ptitSeb/gl4es/tree/master)
+MIT license
