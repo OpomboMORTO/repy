@@ -4,29 +4,22 @@
 
 `repy` is a script to install preconfigured rootfs with [Box86](https://github.com/ptitSeb/box86), [Box64](https://github.com/ptitSeb/box64), [Wine](https://www.winehq.org/) and [DXVK](https://github.com/doitsujin/dxvk) installed. It allows you to run x86 and x86_64 windows programs (such as games) on Android using [Termux](https://github.com/termux/termux-app).
 
-`Termux-box` is not Box64Droid neither Box4Droid.
+`repy` is not Box64Droid neither Termux-box
 
 ## Installation
-After installation the start command in termux is `termux-box`
+After installation the start command in termux is `repy`
 
 Download and install
 [Termux](https://f-droid.org/repo/com.termux_118.apk),
-[Termux-X11](https://raw.githubusercontent.com/olegos2/termux-box/main/components/termux-x11-arm64-v8a-debug.apk)
+
+[Termux-X11](https://raw.githubusercontent.com/olegos2/termux-box/main/components/termux-x11-arm64-v8a-debug-latest.apk)
 
 Open termux and paste command
 
 `curl -s -o x https://raw.githubusercontent.com/olegos2/termux-box/main/install && chmod +x x && ./x`
 
-### Additional components
-Updated
-[Termux-X11](https://raw.githubusercontent.com/olegos2/termux-box/main/components/termux-x11-arm64-v8a-debug-latest.apk)
-for dri3 turnip mode.
-##
-
 ## Configuration
-After installing termux-box some settings and variables can be changed in termux-box/preferences menu.
-To install Vulkan/OpenGL drivers you should start Wine and select Mesa and D3D libs in Start Menu -> Install.
-To change or add environment variables edit config saved in `/sdcard/termux-box/Env.conf`.
+After installation, start the repy environment using the `repy` command, select start to generate a wine prefix, after that go to settings and install directX and the dxvk of your choice.
 
 #
 Big thanks to Hugo for help.
