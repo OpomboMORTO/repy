@@ -1,0 +1,333 @@
+#!/bin/bash
+
+export null='\033[0m'
+
+export red='\033[0;91m'
+
+export green='\033[1;92m'
+
+export yellow='\033[1;33m'
+
+export gray='\033[48;5;240m'
+
+export Gray='\033[48;5;235m'
+
+
+echo "[Gloria Aos Pombos]" & sleep 1
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow}rootfsEmpty"${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+sleep 1
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} 1 chroot"${null}
+echo -e "${yellow} 2 proot"${null}
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+read opcao
+
+if [ $opcao 1 ] || [ $opcao 2 ]
+
+then
+
+	&>/dev/null
+else
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} invalido"${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+fi
+
+clear
+
+termux-setup-storage & sleep 4 &>/dev/null
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} storage acess"${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+sleep 1
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} update termux"${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+apt-get clean
+apt-get update >/dev/null 2>&1
+apt-get -y --with-new-pkgs -o Dpkg::Options::="--force-confdef" upgrade >/dev/null 2>&1
+
+sleep 1
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} installed update"${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+if [ $opcao = 1 ]
+then
+
+       pkg install x11-repo -y &>/dev/null
+       pkg install pulseaudio -y &>/dev/null
+       pkg install xwayland -y &>/dev/null
+       pkg install wget -y &>/dev/null
+       pkg install tsu -y &>/dev/null
+
+elif [ $opcao = 2 ]
+then
+
+       pkg install x11-repo -y &>/dev/null
+       pkg install pulseaudio -y &>/dev/null
+       pkg install xwayland -y &>/dev/null
+       pkg install proot -y &>/dev/null
+       pkg install wget -y &>/dev/null
+       pkg install proot-distro -y &>/dev/null
+
+fi
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} installed x11"${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+wget https://github.com/OpomboMORTO/repy/raw/main/packages/termux-x11-1.02.07-0-all.deb &>/dev/null
+dpkg -i termux-x11-1.02.07-0-all.deb &>/dev/null
+rm -rf termux-x11-1.02.07-0-all.deb
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} installed rootfs"${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+if [ $opcao = 1 ]
+then
+        wget -q --show-progress https://github.com/OpomboMORTO/repy/releases/download/linux/root.tar.gz
+
+elif [ $opcao = 2 ]
+then
+        mkdir -p /data/data/com.termux/files/usr/var/lib/proot-distro/ &>/dev/null
+	mkdir -p /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ &>/dev/null
+	mkdir -p /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu &>/dev/null
+	wget -q wget -q --show-progress https://github.com/OpomboMORTO/repy/releases/download/linux/root.tar.gz
+fi
+
+if [ $opcao = 1 ]
+then
+       sudo mkdir ~/rootfsEmpty
+       sudo mkdir ~/rootfsEmpty/sdcard
+       sudo tar  -xzvf root.tar.gz -C ~/rootfsEmpty &>/dev/null
+
+elif [ $opcao = 2 ]
+then
+       proot-distro restore root.tar.gz &>/dev/null
+fi
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} installed "${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+curl -O https://raw.githubusercontent.com/OpomboMORTO/fex-acclan/main/scripts/repy &>/dev/null
+chmod +x repy
+mv repy $PREFIX/bin &>/dev/null
+
+rm -r rootfsEmpty &>/dev/null
+
+if [ $opcao = 1 ]
+then
+
+rm root.tar.gz &>/dev/null
+
+elif [ $opcao = 2 ]
+then
+
+rm root.tar.gz &>/dev/null
+
+fi
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} type [repy] to start"${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"

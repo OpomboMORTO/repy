@@ -1,0 +1,417 @@
+#!/bin/bash
+
+export null='\033[0m'
+
+export red='\033[0;91m'
+
+export green='\033[1;92m'
+
+export yellow='\033[1;33m'
+
+export gray='\033[48;5;240m'
+
+export Gray='\033[48;5;235m'
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} start repy "${null}
+echo -e "${yellow} uninstall repy "${null}
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+read opcao
+
+if [ $opcao = 0 ] || [ $opcao = 1 ] || [ $opcao = 2 ] || [ $opcao = 3 ]
+
+then
+
+&>/dev/null
+
+else
+
+./fex
+
+fi
+
+if [ $opcao = 1 ]
+then
+
+clear 
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} starting repy "${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+
+    if [ -d /data/data/com.termux/files/home/rootfsEmpty ]
+    then
+
+        clear
+
+        unset LD_PRELOAD
+
+        export PATH=/sbin:/usr/bin:/usr/sbin:/system/bin:/system/xbin:$PATH
+
+        export USER=root
+
+        export HOME=/root
+
+        export LANGUAGE=C
+
+        export LANG=C
+
+        folder=/data/data/com.termux/files/home/rootfsEmpty 
+
+        echo -e "\x1b[33m [ Mounting system folders ]"
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} mount /dev "${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+        sudo mount --bind /dev $folder/dev
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} mount /dev "${null}
+echo -e "${yellow} mount /sys"${null}
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+        sudo mount --bind /sys $folder/sys
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} mount /dev "${null}
+echo -e "${yellow} mount /sys"${null}
+echo -e "${yellow} mount /proc"${null}
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+        sudo mount --bind /proc $folder/proc
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} mount /sys "${null}
+echo -e "${yellow} mount /proc"${null}
+echo -e "${yellow} mount /pts"${null}
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+        sudo mount --bind /dev/pts $folder/dev/pts
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} mount /proc "${null}
+echo -e "${yellow} mount /pts"${null}
+echo -e "${yellow} mount /sdcard"${null}
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+         sudo mount --bind /sdcard $folder/sdcard
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} mount /pts "${null}
+echo -e "${yellow} mount /sdcard"${null}
+echo -e "${yellow} mount /root"${null}
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+       sudo touch /data/data/com.termux/files/home/rootfsEmpty/opt/chroot
+       
+       termux-x11 :0 &>/dev/null & pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1 &>/dev/null & sleep 1
+	
+       sudo mount --bind $PREFIX/tmp/ $folder/tmp/
+	
+       
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} mount /sdcard "${null}
+echo -e "${yellow} mount /root"${null}
+echo -e "${yellow} starting"${null}
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+        sudo chroot $folder /bin/su - root
+
+        echo -e "\033[1m\x1b[33m [ Unmounting dev/pts ... ]"
+
+        sudo umount $folder/dev/pts
+
+        echo -e " [ Unmounting /dev ... ]"
+
+        sudo umount $folder/dev
+
+        echo -e " [ Unmounting /proc ... ]"
+
+        sudo umount $folder/proc
+
+        echo -e " [ Unmounting sdcard ... ]"
+
+        sudo umount $folder/sdcard
+
+        echo -e " [ Unmounting /sys ... ]"
+
+        sudo umount $folder/sys
+
+        echo -e " \x1b[32m[ Unmounted ]\e[0m"
+
+        sudo umount $folder/tmp
+
+exit 0
+
+    else
+
+        termux-x11 :0 &>/dev/null & pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1 &>/dev/null & sleep 1 & sleep 1
+
+        proot-distro login ubuntu --isolated --bind /sdcard:/sdcard --bind $PREFIX/tmp/:/tmp/
+
+    fi
+
+elif [ $opcao = 2 ]
+then
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} removing repy "${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+if [ -d ~/rootfsEmpty ]
+    then
+
+        sudo chroot $folder /bin/su - root
+        sudo umount $folder/dev/pts
+        sudo umount $folder/dev
+        sudo umount $folder/proc
+        sudo umount $folder/sdcard
+        sudo umount $folder/sys
+        sudo umount $folder/tmp
+
+        sudo rm -rf ~/rootfsEmpty 
+
+        rm $PREFIX/bin/repy
+    else
+        proot-distro remove ubuntu &>/dev/null
+        rm $PREFIX/bin/repy
+fi
+
+elif [ $opcao = 3 ]
+then
+
+clear
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} invalid "${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+fi
+
+if [ $opcao = 0 ]
+then
+
+clear 
+
+echo -e "${gray}                                                ..${null}"
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "${yellow} until later "${null}
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e ""
+echo -e "versao :07.09.23"
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e ""
+echo -e "${Gray}..................................              ..${null}"
+echo -e "${gray}                                [HOME] to menu  ..${null}"
+
+sleep 3
+
+exit 
+
+fi
