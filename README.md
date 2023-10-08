@@ -27,6 +27,8 @@ Big thanks to olegos for readme.
 * proot environment is slow
   
 * creation of the wine prefix and installations of dxvk , directX , is very slow.
+
+* creating the wine container can take 3~5 minutes
   
 ### Renderers
 
