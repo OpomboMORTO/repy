@@ -29,11 +29,15 @@ Big thanks to olegos for readme.
 * creation of the wine prefix and installations of dxvk , directX , is very slow.
 
 * creating the wine container can take 3~5 minutes
+
+#
   
 ### Renderers
 
 * Turnip-Zink : for adreno devices from the 6xx line, turnip availability may vary depending on your device, the 7xx line is not compatible in this version
-* OpenGl ES : availability for devices with OPENGL-ES support, its compatibility is still being tested, it is only available in opengl 1.X 2.X applications for 3.X 4.X applications use zink 
+* OpenGl ES : availability for devices with OPENGL-ES support, its compatibility is still being tested, it is only available in opengl 1.X 2.X applications for 3.X 4.X applications use zink
+
+#
 
 ## Third party applications
 
