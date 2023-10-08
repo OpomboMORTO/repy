@@ -266,6 +266,10 @@ then
 elif [ $opcao = 2 ]
 then
         tar -xzvf root.tar.gz -C /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/ &>/dev/null
+        cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/usr/lib/aarch64-linux-gnu/dri/
+        curl -O https://github.com/OpomboMORTO/repy/raw/main/usr/zink/zink_dri.so &>/dev/null
+        chmod +x zink_dri.so
+
 fi
 
 clear
