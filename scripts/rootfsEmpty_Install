@@ -265,7 +265,7 @@ then
 
 elif [ $opcao = 2 ]
 then
-       mkdir root.tar.gz -C /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/ &>/dev/null
+        tar -xzvf root.tar.gz -C /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/ &>/dev/null
 fi
 
 clear
