@@ -25,6 +25,7 @@ Big thanks to olegos for readme.
 ## Debugs
 
 * proot environment is slow
+  
 * creation of the wine prefix and installations of dxvk , directX , is very slow.
   
 ### Renderers
