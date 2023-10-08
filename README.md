@@ -2,10 +2,6 @@
 
 ## About
 
-!proot environment is slow
-
-!creation of the wine prefix and installations of dxvk , directX , is very slow.
-
 `repy` is a script to install preconfigured rootfs with [Box86](https://github.com/ptitSeb/box86), [Box64](https://github.com/ptitSeb/box64), [Wine](https://www.winehq.org/) and [DXVK](https://github.com/doitsujin/dxvk) installed. It allows you to run x86 and x86_64 windows programs (such as games) on Android using [Termux](https://github.com/termux/termux-app).
 
 `repy` is not Box64Droid neither Termux-box
@@ -25,6 +21,11 @@ After installation, start the repy environment using the `repy` command, select 
 
 #
 Big thanks to olegos for readme.
+
+## Debugs
+
+* proot environment is slow
+* creation of the wine prefix and installations of dxvk , directX , is very slow.
   
 ### Renderers
 
