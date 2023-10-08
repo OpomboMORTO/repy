@@ -14,9 +14,7 @@
 After installation the start command in termux is `repy`
 
 Download and install
-[Termux](https://f-droid.org/repo/com.termux_118.apk),
-
-[Termux-X11](https://raw.githubusercontent.com/olegos2/termux-box/main/components/termux-x11-arm64-v8a-debug-latest.apk)
+[Termux](https://f-droid.org/repo/com.termux_118.apk),[Termux-X11](https://raw.githubusercontent.com/olegos2/termux-box/main/components/termux-x11-arm64-v8a-debug-latest.apk)
 
 Open termux and paste command
 
