@@ -247,14 +247,14 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
 
 if [ $opcao = 1 ]
 then
-        wget -q --show-progress https://github.com/OpomboMORTO/repy/releases/download/linux/root.tar.gz
+        wget -q --show-progress https://github.com/OpomboMORTO/repy/releases/download/updates/root.tar.gz
 
 elif [ $opcao = 2 ]
 then
         mkdir -p /data/data/com.termux/files/usr/var/lib/proot-distro/ &>/dev/null
 	mkdir -p /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ &>/dev/null
 	mkdir -p /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu &>/dev/null
-	wget -q wget -q --show-progress https://github.com/OpomboMORTO/repy/releases/download/linux/root.tar.gz
+	wget -q wget -q --show-progress https://github.com/OpomboMORTO/repy/releases/download/updates/root.tar.gz
 fi
 
 if [ $opcao = 1 ]
@@ -299,7 +299,7 @@ curl -O https://raw.githubusercontent.com/OpomboMORTO/repy/main/scripts/repy &>/
 chmod +x repy
 mv repy $PREFIX/bin &>/dev/null
 
-rm -r rootfsEmpty &>/dev/null
+#rm -r rootfsEmpty &>/dev/null
 
 if [ $opcao = 1 ]
 then
