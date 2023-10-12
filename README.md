@@ -30,7 +30,24 @@ Big thanks to olegos for readme.
 
 * creating the wine container can take 3~5 minutes
 
-  
+## Updates
+
+* added turnip support for adrenos 7xx
+
+* added "mesa-23.2.1" "mesa-a7xx"
+
+* removed LLVM for testing
+
+* added maximum gpu clock strength menu "root"
+
+* added force CPU performance mode "root"
+
+* added gallium initial implementation
+
+* added hud menu and advanced menu
+
+* added framebuffer configuration, FB0 required
+
 ## Renderers
 
 * Turnip-Zink : for adreno devices from the 6xx line, turnip availability may vary depending on your device, the 7xx line is not compatible in this version
