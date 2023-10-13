@@ -266,9 +266,10 @@ then
 elif [ $opcao = 2 ]
 then
         tar -xzvf root.tar.gz -C /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/ &>/dev/null
-        cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/usr/lib/aarch64-linux-gnu/dri/
-        wget https://github.com/OpomboMORTO/repy/raw/main/usr/zink/zink_dri.so &>/dev/null
-        chmod +x zink_dri.so
+        cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/opt/.tmp0/
+        wget https://github.com/OpomboMORTO/repy/releases/download/updates/mesa.d.tar.gz &>/dev/null
+        tar -xf mesa.d.tar.gz &>/dev/null
+        cp -r /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/opt/.tmp0/mesa.d/mesa-23.2.1/usr /
 
 fi
 
