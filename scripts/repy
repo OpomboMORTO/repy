@@ -12,6 +12,14 @@ export gray='\033[48;5;240m'
 
 export Gray='\033[48;5;235m'
 
+termux-x11 :1 &>/dev/null &
+
+rm -rf $PREFIX/tmp/pulse-*
+
+pulseaudio -k >/dev/null 2>&1
+
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
+
 clear
 
 echo -e "${gray}                                                ..${null}"
@@ -245,9 +253,6 @@ echo -e ""
 echo -e "${Gray}..................................              ..${null}"
 echo -e "${gray}                                [HOME] to menu  ..${null}"
 
-       sudo touch /data/data/com.termux/files/home/rootfsEmpty/opt/chroot
-       
-       termux-x11 :0 &>/dev/null & pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1 &>/dev/null & sleep 1
 	
        sudo mount --bind $PREFIX/tmp/ $folder/tmp/
 	
