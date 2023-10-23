@@ -32,6 +32,34 @@ Big thanks to olegos for readme.
 
 ## Updates
 
+  `update 23.10.23`
+
+* update 23.10 took a while this last update but it came packed
+
+* added dlls related to audio, fixed audio
+
+* added dma "dynamic allocation memory"
+
+* added dynamics shader, Dynamics wine
+
+* dynamic allocation works by allocating pieces of physical blocks in ram memory, this consumes ram memory, allocating pieces in ram can cause unknown bugs but it is faster, you can only allocate just shaders or the complete wine container, it is not very recommended if you have little memory, the recommendation is at least `8 gigs` to allocate the container
+
+* added wine 17 18 19 20 , ge-proton
+
+* added `wine anti cheate`, it is still being worked on `with lutris-ge` support, it may not work as it should  
+
+* added initial support for `league of legends` in wine anti-creat, if you install directly from the container, don't log in until the installation is complete, several times when opening you may receive a `black screen`
+
+* now when starting up for the first time the prefix installation is automatic, but the installation of dxvk is not, so always after starting go into settings to finish the installation of directX dxvk dx3d8 vkd3d.
+
+* It is possible that when starting x11 it does not start, if this happens close x11 and termux, we do not know the reason, this could be random.
+
+* the bachmarks are broken by the hour
+
+* added bigbox 3 among others  check settings
+
+  `update 19.10.23`
+
 * added turnip support for adrenos 7xx
 
 * added "mesa-23.2.1" "mesa-a7xx"
