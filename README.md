@@ -58,7 +58,7 @@ Big thanks to olegos for readme.
 
 * added bigbox 3 among others  check settings
 
-  `update 19.10.23`
+`update 19.10.23`
 
 * added turnip support for adrenos 7xx
 
