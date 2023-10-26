@@ -32,6 +32,14 @@ Big thanks to olegos for readme.
 
 ## Updates
 
+  `update 26.10.23`
+
+* added turnip-zink a7xx suport "fix"
+
+* added table 24.0-devel
+
+* added wine 8-21
+  
   `update 23.10.23`
 
 * update 23.10 took a while this last update but it came packed
