@@ -261,7 +261,7 @@ if [ $opcao = 1 ]
 then
        sudo mkdir ~/rootfsEmpty
        sudo mkdir ~/rootfsEmpty/sdcard
-       sudo mkdir ~/rootfsEmpty/mnt/media_rw
+       #sudo mkdir ~/rootfsEmpty/mnt/media_rw
        sudo tar  -xzvf root.tar.gz -C ~/rootfsEmpty &>/dev/null
 
 elif [ $opcao = 2 ]
