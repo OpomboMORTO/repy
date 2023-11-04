@@ -180,7 +180,7 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
 
         sudo mount --bind /proc $folder/proc
 
-        sudo mount --bind /mnt/media_rw  $folder/mnt/media_rw
+        #sudo mount --bind /mnt/media_rw  $folder/mnt/media_rw
 
 clear
 
@@ -296,7 +296,7 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
 
         sudo umount $folder/proc
 
-        sudo umount $folder/mnt/media_rw
+        #sudo umount $folder/mnt/media_rw
 
         echo -e " [ Unmounting sdcard ... ]"
 
@@ -353,7 +353,7 @@ if [ -d ~/rootfsEmpty ]
         sudo umount $folder/dev/pts
         sudo umount $folder/dev
         sudo umount $folder/proc
-        sudo umount $folder/mnt/media_rw
+        #sudo umount $folder/mnt/media_rw
         sudo umount $folder/sdcard
         sudo umount $folder/sys
         sudo umount $folder/tmp
