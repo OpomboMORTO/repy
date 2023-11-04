@@ -180,7 +180,7 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
 
         sudo mount --bind /proc $folder/proc
 
-        sudo mount --bind /mnt/media_rw/  $folder/mnt/media_rw
+        sudo mount --bind /mnt/media_rw  $folder/mnt/media_rw
 
 clear
 
@@ -295,6 +295,8 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
         echo -e " [ Unmounting /proc ... ]"
 
         sudo umount $folder/proc
+
+        sudo umount $folder/mnt/media_rw
 
         echo -e " [ Unmounting sdcard ... ]"
 
