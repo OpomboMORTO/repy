@@ -261,24 +261,11 @@ if [ $opcao = 1 ]
 then
        sudo mkdir ~/rootfsEmpty
        sudo mkdir ~/rootfsEmpty/sdcard
-       #sudo mkdir ~/rootfsEmpty/mnt/media_rw
        sudo tar  -xzvf root.tar.gz -C ~/rootfsEmpty &>/dev/null
 
 elif [ $opcao = 2 ]
 then
         tar -xzvf root.tar.gz -C /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/ &>/dev/null
-        cd /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/opt/.tmp0/
-        wget https://github.com/OpomboMORTO/repy/releases/download/updates/mesa.d.tar.gz &>/dev/null
-        tar -xf mesa.d.tar.gz &>/dev/null
-        chmod +x mesa.d/mesa-23.2-rc3/usr/lib/aarch64-linux-gnu/dri/zink_dri.so
-        chmod +x mesa.d/mesa-23.2-rc3/usr/lib/arm-linux-gnueabihf/dri/zink_dri.so
-        chmod +x mesa.d/mesa-23.2.1/usr/lib/aarch64-linux-gnu/dri/zink_dri.so
-        chmod +x mesa.d/mesa-23.2.1/usr/lib/arm-linux-gnueabihf/dri/zink_dri.so
-        chmod +x mesa.d/mesa-a7xx/usr/lib/aarch64-linux-gnu/dri/zink_dri.so
-        chmod +x mesa.d/mesa-a7xx/usr/lib/arm-linux-gnueabihf/dri/zink_dri.so
-
-        cp -r /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/opt/.tmp0/mesa.d/mesa-23.2.1/usr /
-
 fi
 
 clear
