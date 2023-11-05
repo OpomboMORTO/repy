@@ -182,6 +182,8 @@ then
        pkg install xwayland -y &>/dev/null
        pkg install wget -y &>/dev/null
        pkg install tsu -y &>/dev/null
+       pkg install angle-android -y &>/dev/null
+       pkg install virglrenderer-android -y &>/dev/null
 
 elif [ $opcao = 2 ]
 then
@@ -192,6 +194,8 @@ then
        pkg install proot -y &>/dev/null
        pkg install wget -y &>/dev/null
        pkg install proot-distro -y &>/dev/null
+       pkg install angle-android -y &>/dev/null
+       pkg install virglrenderer-android -y &>/dev/null
 
 fi
 
