@@ -18,7 +18,7 @@ Open termux and paste command
 
 To install Frost version "ON TESTING ROOTFS ONLY"
 
-`curl -O https://raw.githubusercontent.com/OpomboMORTO/repy-frost/main/script/rootfs-frost_Install && chmod +x rootfs-frost_Install && ./rootfsEmpty-frost_Install`
+`curl -O https://raw.githubusercontent.com/OpomboMORTO/repy-frost/main/script/rootfs-frost_Install && chmod +x rootfs-frost_Install && ./rootfs-frost_Install`
 
 ## Configuration
 After installation, start the repy environment using the `repy` command, select start to generate a wine prefix, after that go to settings and install directX and the dxvk of your choice.
