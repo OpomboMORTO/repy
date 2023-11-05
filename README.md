@@ -18,6 +18,8 @@ Open termux and paste command
 
 To install Frost version "ON TESTING ROOTFS ONLY"
 
+to start type `repy-frost`
+
 `curl -O https://raw.githubusercontent.com/OpomboMORTO/repy-frost/main/script/rootfs-frost_Install && chmod +x rootfs-frost_Install && ./rootfs-frost_Install`
 
 ## Configuration
