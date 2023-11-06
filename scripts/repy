@@ -12,7 +12,7 @@ export gray='\033[48;5;240m'
 
 export Gray='\033[48;5;235m'
 
-virgl_test_server_android --angle-vk &
+virgl_test_server_android --angle-vulkan &
 
 XDG_RUNTIME_DIR=${TMPDIR} &
 
