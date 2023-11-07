@@ -105,7 +105,17 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
 
         export LANG=C
 
-        folder=/data/data/com.termux/files/home/rootfsEmpty 
+        folder=/data/data/com.termux/files/home/rootfsEmpty
+
+        diretorio="/mnt/media_rw/"
+
+        if [ "$(sudo ls -A $diretorio)" ]; then
+
+        mkdir rootfsEmpty/ssd_mount
+
+        sudo mount --bind /mnt/media_rw/A24C-8B25 $folder/ssd_mount
+
+        else
 
         echo -e "\x1b[33m [ Mounting system folders ]"
 
@@ -184,8 +194,6 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
 
         sudo mount --bind /proc $folder/proc
 
-        #sudo mount --bind /mnt/media_rw  $folder/mnt/media_rw
-
 clear
 
 echo -e "${gray}                                                ..${null}"
@@ -259,10 +267,8 @@ echo -e ""
 echo -e "${Gray}..................................              ..${null}"
 echo -e "${gray}                                [HOME] to menu  ..${null}"
 
-	
-       sudo mount --bind $PREFIX/tmp/ $folder/tmp/
-	
-       
+       sudo mount --bind $PREFIX/tmp/ $folder/tmp
+
 clear
 
 echo -e "${gray}                                                ..${null}"
@@ -300,8 +306,6 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
 
         sudo umount $folder/proc
 
-        #sudo umount $folder/mnt/media_rw
-
         echo -e " [ Unmounting sdcard ... ]"
 
         sudo umount $folder/sdcard
@@ -313,6 +317,14 @@ echo -e "${gray}                                [HOME] to menu  ..${null}"
         echo -e " \x1b[32m[ Unmounted ]\e[0m"
 
         sudo umount $folder/tmp
+
+        if [ "$(sudo ls -A $diretorio)" ]; then
+
+        mkdir rootfsEmpty/ssd_mount
+
+        sudo umount $folder/ssd_mount
+
+        else
 
 exit 0
 
@@ -357,7 +369,6 @@ if [ -d ~/rootfsEmpty ]
         sudo umount $folder/dev/pts
         sudo umount $folder/dev
         sudo umount $folder/proc
-        #sudo umount $folder/mnt/media_rw
         sudo umount $folder/sdcard
         sudo umount $folder/sys
         sudo umount $folder/tmp
